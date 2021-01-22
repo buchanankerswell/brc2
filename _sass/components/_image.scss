@@ -65,8 +65,10 @@
 
 		&.main {
 			display: block;
-			margin: (_size(element-margin) * 1.25) 0;
+			margin: (_size(element-margin) * 1) 0;
 			width: 100%;
+			-webkit-mask-image: linear-gradient(to top, transparent 5%, black);
+			mask-image: linear-gradient(to top, transparent 5%, black);
 
 			img {
 				width: 100%;
