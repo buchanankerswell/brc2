@@ -3,7 +3,7 @@ title: Black Ridge Contractors
 email: traviscottam@gmail.com
 description: Southern Utah's Greatest Excavators
 baseurl: '' # the subpath of your site, e.g. /blog
-url: 'http://buchanankerswell.github.io/brc' # the base hostname & protocol for your site
+url: 'https://buchanankerswell.github.io/brc' # the base hostname & protocol for your site
 author:
 street_address: 1234 Somewhere Road
 city: Saint George
