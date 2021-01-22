@@ -15,15 +15,15 @@ phone: (801) 318-7903
 icon: fa-connectdevelop # Font Awesome class for your site's icon
 
 # Social settings
-facebook_url: a
-github_url: b
-gitlab_url: c
-googleplus_url: d
-instagram_url: e
-linkedin_url: f
-pinterest_url: g
-slack_url: h
-twitter_url: i
+facebook_url: \#
+github_url: \#
+gitlab_url: \#
+googleplus_url: \#
+instagram_url: \#
+linkedin_url: \#
+pinterest_url: \#
+slack_url: \#
+twitter_url: \#
 
 # Build settings
 markdown: kramdown
