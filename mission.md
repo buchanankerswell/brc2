@@ -6,4 +6,4 @@ Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend di
 
 <!-- Footlinks -->
 
-<p class="copyright" style="text-align:center;"><a href="#">Home</a> | <a href="#estimate">Estimate</a> | <a href="#mission">Mission</a> | <a href="#team">Team</a> | <a href="#work">Work</a></p>
+<p class="copyright" style="text-align:center;"><a href="#">Home</a> | <a href="#estimate">Estimate</a> | <a href="#jobs">Jobs</a> | <a href="#mission">Mission</a> | <a href="#team">Team</a></p>

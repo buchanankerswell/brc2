@@ -1,5 +1,5 @@
 ---
-title: work
+title: jobs
 ---
 
 <span class="image main"><img src="assets/images/pv.jpg" alt="" /></span>
@@ -42,4 +42,4 @@ Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris a
 
 <!-- Footlinks -->
 
-<p class="copyright" style="text-align:center;"><a href="#">Home</a> | <a href="#estimate">Estimate</a> | <a href="#mission">Mission</a> | <a href="#team">Team</a> | <a href="#work">Work</a></p>
+<p class="copyright" style="text-align:center;"><a href="#">Home</a> | <a href="#estimate">Estimate</a> | <a href="#jobs">Jobs</a> | <a href="#mission">Mission</a> | <a href="#team">Team</a></p>

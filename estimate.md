@@ -62,8 +62,13 @@ image: desertbedrock.jpg
 	</div>
 </section>
 <section>
-    <h2 class="major"> Message us for a quote </h2>
-
+    <h2 class="major"> Contact us for a quote </h2>
+    <ul style="text-align:center; list-style-type:none;">
+      <li class="icon-hp fa-user">&nbsp; Travis Cottam &nbsp;</li>
+      <li class="icon-hp fa-phone">&nbsp; (801) 318-7903 &nbsp;</li>
+      <li class="icon-hp fa-envelope">&nbsp; traviscottam@gmail.com &nbsp;</li>
+      <li class="icon-hp fa-map-pin">&nbsp; Saint George, Utah &nbsp;</li>
+    </ul>
     <form action="https://formspree.io/{{ site.email }}" method="POST">
     	<div class="fields">
     		<div class="field half first">
@@ -125,4 +130,4 @@ image: desertbedrock.jpg
 
 <!-- Footlinks -->
 
-<p class="copyright" style="text-align:center;"><a href="#">Home</a> | <a href="#estimate">Estimate</a> | <a href="#mission">Mission</a> | <a href="#team">Team</a> | <a href="#work">Work</a></p>
+<p class="copyright" style="text-align:center;"><a href="#">Home</a> | <a href="#estimate">Estimate</a> | <a href="#jobs">Jobs</a> | <a href="#mission">Mission</a> | <a href="#team">Team</a></p>

@@ -51,8 +51,8 @@
 			background-size:		cover;
 			background-repeat:		no-repeat;
 			z-index: 1;
-			-webkit-mask-image: linear-gradient(to top, #{_palette(bg-overlay)}, transparent 55%, transparent 60%, #{_palette(bg-overlay)});
-			mask-image: linear-gradient(to top, #{_palette(bg-overlay)}, transparent 55%, transparent 60%, #{_palette(bg-overlay)});
+			-webkit-mask-image: linear-gradient(to top, transparent 5%, #{_palette(bg-overlay)});
+			mask-image: linear-gradient(to top, transparent 5%, #{_palette(bg-overlay)});
 		}
 
 		body.is-article-visible & {
