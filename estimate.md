@@ -62,7 +62,7 @@ image: desertbedrock.jpg
 	</div>
 </section>
 <section>
-    <h2 class="major"> Contact us for a quote </h2>
+    <h2 class="major"> Get a quote </h2>
     <ul style="text-align:center; list-style-type:none;">
       <li class="icon-hp fa-user">&nbsp; Travis Cottam &nbsp;</li>
       <li class="icon-hp fa-phone">&nbsp; (801) 318-7903 &nbsp;</li>
