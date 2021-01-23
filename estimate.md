@@ -1,18 +1,68 @@
 ---
-title: contact
+title: estimate
 image: desertbedrock.jpg
 ---
 
 <section>
-	<ul class="alt" style="text-align:center;">
-		<li><span class="icon fa-user">&nbsp; &nbsp; Travis Cottam</span></li>
-		<li><span class="icon fa-phone">&nbsp; &nbsp; (801) 318-7903</span></li>
-		<li><span class="icon fa-envelope">&nbsp; &nbsp; traviscottam@gmail.com</span></li>
-		<li><span class="icon fa-map-pin">&nbsp; &nbsp; Saint George, Utah</span></li>
-	</ul>
+  <h2 class="major"> The Equipment </h2>
+  <ul>
+    <li>Big CAT</li>
+    <li>Little CAT</li>
+    <li>Aother CAT</li>
+    <li>MiniX</li>
+    <li>Harley Road King</li>
+    <li>Aother CAT</li>
+  </ul>
 </section>
 <section>
-    <h3> Send us a message for a quote </h3>
+	<h2 class="major">Rates</h2>
+	<div class="table-wrapper">
+		<table>
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Description</th>
+					<th>Price</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Item One</td>
+					<td>Ante turpis integer aliquet porttitor.</td>
+					<td>29.99</td>
+				</tr>
+				<tr>
+					<td>Item Two</td>
+					<td>Vis ac commodo adipiscing arcu aliquet.</td>
+					<td>19.99</td>
+				</tr>
+				<tr>
+					<td>Item Three</td>
+					<td> Morbi faucibus arcu accumsan lorem.</td>
+					<td>29.99</td>
+				</tr>
+				<tr>
+					<td>Item Four</td>
+					<td>Vitae integer tempus condimentum.</td>
+					<td>19.99</td>
+				</tr>
+				<tr>
+					<td>Item Five</td>
+					<td>Ante turpis integer aliquet porttitor.</td>
+					<td>29.99</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td colspan="2"></td>
+					<td>100.00</td>
+				</tr>
+			</tfoot>
+		</table>
+	</div>
+</section>
+<section>
+    <h2 class="major"> Message us for a quote </h2>
 
     <form action="https://formspree.io/{{ site.email }}" method="POST">
     	<div class="fields">
@@ -75,4 +125,4 @@ image: desertbedrock.jpg
 
 <!-- Footlinks -->
 
-<p class="copyright" style="text-align:center;"><a href="#">Home</a> | <a href="#contact">Contact</a> | <a href="#mission">Mission</a> | <a href="#team">Team</a> | <a href="#work">Work</a></p>
+<p class="copyright" style="text-align:center;"><a href="#">Home</a> | <a href="#estimate">Estimate</a> | <a href="#mission">Mission</a> | <a href="#team">Team</a> | <a href="#work">Work</a></p>

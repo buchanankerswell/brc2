@@ -9,9 +9,21 @@
 	.icon {
 		@include icon;
 		border-bottom: none;
-		position: relative;
 
 		> .label {
 			display: none;
 		}
+
+	}
+
+	.icon-hp {
+		@include icon;
+		min-width: 7.5rem;
+		height: 2.75rem;
+		line-height: 2.75rem;
+		padding: 0 0 0 (0 + _font(letter-spacing) * 0.5);
+		text-transform: uppercase;
+		letter-spacing: _font(letter-spacing) * 0.5;
+		font-size: 0.85rem;
+		border-bottom: none;
 	}

@@ -23,7 +23,7 @@
 	$font: (
 		family:						('Source Sans Pro', sans-serif),
 		family-fixed:				('Courier New', monospace),
-		weight:						300,
+		weight:						400,
 		weight-bold:				600,
 		letter-spacing:				0.2rem,
 		letter-spacing-heading:		0.5rem
@@ -31,13 +31,13 @@
 
 // Palette.
 	$palette: (
-		bg:							#1b1f22,
-		bg-alt:						#000000,
+		bg:							#ffffff,
+		bg-alt:						#ffffff,
 		bg-overlay:					rgba(19,21,25,0.5),
-		fg:							#ffffff,
-		fg-bold:					#ffffff,
-		fg-light:					rgba(255,255,255,0.5),
-		border:						#ffffff,
-		border-bg:					rgba(255,255,255,0.075),
-		border-bg-alt:				rgba(255,255,255,0.175)
+		fg:							#000000,
+		fg-bold:					#000000,
+		fg-light:					rgba(0,0,0,0.5),
+		border:						#000000,
+		border-bg:					rgba(0,0,0,0.075),
+		border-bg-alt:				rgba(0,0,0,0.175)
 	);
