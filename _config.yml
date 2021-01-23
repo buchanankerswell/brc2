@@ -2,7 +2,7 @@
 title: Black Ridge Contractors
 email: traviscottam@gmail.com
 description: Southern Utah's Greatest Excavators
-baseurl: '/brc' # the subpath of your site, e.g. /blog
+baseurl: '/brc2' # the subpath of your site, e.g. /blog
 url: '' # the base hostname & protocol for your site
 author:
 street_address: 1234 Somewhere Road
