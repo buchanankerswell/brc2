@@ -71,6 +71,25 @@
 			}
 		}
 
+		@include breakpoint('<=xsmall') {
+			.logo {
+				width: 10rem;
+				height: 10rem;
+				line-height: 10rem;
+				border: solid _size(border-width) _palette(border);
+				border-radius: 100%;
+				font-size: 3em;
+				font-weight: bolder;
+				text-align: center;
+
+				.icon {
+					&:before {
+						font-size: 8rem;
+					}
+				}
+			}
+		}
+
 		.logo {
 			width: 10rem;
 			height: 10rem;
