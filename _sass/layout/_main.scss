@@ -215,6 +215,7 @@
 			height: ((100vw / $columns) + 2vw);
 			min-height: $minHeight;
 			width: (100% / $columns);
+			max-width: 100%;
 			// Prevent user touch selection
 			-webkit-touch-callout: none;
 			-webkit-user-select: none;
@@ -230,21 +231,36 @@
 		}
 	}
 	// Default.
-	@include jobs(_misc(main-layout, default, rows), _misc(main-layout, default, columns), _misc(main-layout, default, pad), _misc(main-layout, default, minHeight));
+	@include jobs(_misc(main-layout, default, rows),
+								_misc(main-layout, default, columns),
+								_misc(main-layout, default, pad),
+								_misc(main-layout, default, minHeight));
 	// XLarge.
 	@include breakpoint('<=xlarge') {
-		@include jobs(_misc(main-layout, xlarge, rows), _misc(main-layout, xlarge, columns), _misc(main-layout, xlarge, pad), _misc(main-layout, xlarge, minHeight));
+		@include jobs(_misc(main-layout, xlarge, rows),
+									_misc(main-layout, xlarge, columns),
+									_misc(main-layout, xlarge, pad),
+									_misc(main-layout, xlarge, minHeight));
 	}
 	// Large.
 	@include breakpoint('<=large') {
-		@include jobs(_misc(main-layout, large, rows), _misc(main-layout, large, columns), _misc(main-layout, large, pad), _misc(main-layout, large, minHeight));
+		@include jobs(_misc(main-layout, large, rows),
+									_misc(main-layout, large, columns),
+									_misc(main-layout, large, pad),
+									_misc(main-layout, large, minHeight));
 	}
 	// Medium.
 	@include breakpoint('<=medium') {
-		@include jobs(_misc(main-layout, medium, rows), _misc(main-layout, medium, columns), _misc(main-layout, medium, pad), _misc(main-layout, medium, minHeight));
+		@include jobs(_misc(main-layout, medium, rows),
+									_misc(main-layout, medium, columns),
+									_misc(main-layout, medium, pad),
+									_misc(main-layout, medium, minHeight));
 	}
 	// XSmall.
 	@include breakpoint('<=xsmall') {
-		@include jobs(_misc(main-layout, xsmall, rows), _misc(main-layout, xsmall, columns), _misc(main-layout, xsmall, pad), _misc(main-layout, xsmall, minHeight));
+		@include jobs(_misc(main-layout, xsmall, rows),
+									_misc(main-layout, xsmall, columns),
+									_misc(main-layout, xsmall, pad),
+									_misc(main-layout, xsmall, minHeight));
 	}
 }

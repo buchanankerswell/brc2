@@ -1,7 +1,7 @@
 ---
-layout: management
 title: management
 image: desertrubble.jpg
+social: true
 list:
   caption: The Process
   items:

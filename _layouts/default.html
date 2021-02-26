@@ -38,6 +38,18 @@
 
     {% endif %}
 
+    {% if page.form %}
+
+    {% include form.html %}
+
+    {% endif %}
+
+    {% if page.social %}
+
+    {% include social.html %}
+
+    {% endif %}
+
     {% include footlink.html %}
 
     {% include contact.html %}
