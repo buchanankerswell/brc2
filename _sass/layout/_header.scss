@@ -40,6 +40,7 @@
 				width: _size(border-width);
 				height: calc(3.5rem + 1px);
 				background: _palette(border);
+				max-width: 100%;
 			}
 		}
 
@@ -57,6 +58,9 @@
 			line-height: 10rem;
 			border: solid _size(border-width) _palette(border);
 			border-radius: 100%;
+			font-size: 6em;
+			font-weight: bolder;
+			text-align: center;
 
 			.icon {
 				&:before {
@@ -82,6 +86,7 @@
 				padding: 3rem 2rem;
 				max-height: 40rem;
 				overflow: hidden;
+				max-width: 100%;
 
 				> h1 {
 					font-size: 2.5rem;

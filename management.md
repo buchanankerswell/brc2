@@ -1,7 +1,7 @@
 ---
 title: management
-image: desertrubble.jpg
-social: true
+image: fulls/IMG_0532.jpg
+social: false
 list:
   caption: The Process
   items:
@@ -16,3 +16,5 @@ list:
 <h2>How we manage</h2>
 This is where we talk about the process. Talk about your operations. Be sure to use awesome jargon like ten-four. Whatever you want your clients to know about your business.
 </section>
+
+<hr>
