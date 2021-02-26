@@ -22,6 +22,10 @@
 		max-width: 100%;
 		text-align: center;
 
+		.icon-hp {
+			font-size: 0.85em;
+		}
+
 		> * {
 			@include vendor('transition', 'opacity #{_duration(article)} ease-in-out');
 			position: relative;
@@ -79,6 +83,10 @@
 				max-height: 40rem;
 				overflow: hidden;
 
+				> h1 {
+					font-size: 2.5rem;
+				}
+
 				> :last-child {
 					margin-bottom: 0;
 				}
@@ -111,13 +119,13 @@
 
 					a {
 						display: block;
-						min-width: 7.5rem;
+						min-width: 10rem;
 						height: 2.75rem;
 						line-height: 2.75rem;
-						padding: 0 1.25rem 0 (1.25rem + _font(letter-spacing));
+						padding: 0 2rem 0 (2rem + _font(letter-spacing));
 						text-transform: uppercase;
 						letter-spacing: _font(letter-spacing);
-						font-size: 0.8rem;
+						font-size: 0.85rem;
 						border-bottom: 0;
 
 						&:hover {

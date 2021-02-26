@@ -1,1 +1,1 @@
-[Mockup website](https://buchanankerswell.com/brc)
+[Mockup website](https://buchanankerswell.com/brc2)

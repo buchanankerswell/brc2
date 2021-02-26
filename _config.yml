@@ -27,6 +27,8 @@ twitter_url: https://buchanankerswell.com/brc
 
 # Build settings
 markdown: kramdown
-
 sass:
   style: compressed
+collections:
+  images:
+    output: true

@@ -14,18 +14,108 @@
 
   {% for page in site.pages  %}
   {% if page.title %}
+  {% if page.title == 'management' %}
 
-  <!-- {{ page.title }} -->
   <article id="{{ page.title }}">
+
     <h2 class="major">{{ page.title }}</h2>
-    {% if page.image %}<span class="image main"><img src="assets/images/{{ page.image }}" alt="" /></span>{% endif %}
-    <p>
+
+    {% if page.image %}
+
+    <span class="image main"><img src="assets/images/{{ page.image }}" alt="" /></span>
+
+    {% endif %}
+
+    <div>
+
       {{ page.content }}
-    </p>
+
+    </div>
+
+    {% if page.list %}
+
+    {% include list.html %}
+
+    {% endif %}
+
+    {% include footlink.html %}
+
+    {% include contact.html %}
+
+  </article>
+
+  {% else %}
+
+  <article id="{{ page.title }}">
+
+    <h2 class="major">{{ page.title }}</h2>
+
+    {% if page.image %}
+
+    <span class="image main"><img src="assets/images/{{ page.image }}" alt="" /></span>
+
+    {% endif %}
+
+    {% if page.title == "jobs" %}
+
+    {% assign sorted_images = site.images | sort | reverse %}
+
+    <div id="gallery">
+
+      {% for image in sorted_images %}
+
+      <a href="{{ image.path-full }}">
+        <img src="{{ image.path-thumb }}" title="{{ image.caption }}" />
+      </a>
+
+      {% endfor %}
+
+    </div>
+
+    {% else %}
+
+    <div>
+
+      {{ page.content }}
+
+    </div>
+
+    {% endif %}
+
+    {% if page.table %}
+
+    {% include table.html %}
+
+    {% endif %}
+
+    {% if page.list %}
+
+    {% include list.html %}
+
+    {% endif %}
+
+    {% if page.form %}
+
+    {% include form.html %}
+
+    {% endif %}
+
+    {% if page.social %}
+
+    {% include social.html %}
+
+    {% endif %}
+
+    {% include footlink.html %}
+
+    {% include contact.html %}
 
   </article>
 
   {% endif %}
+
+  {% endif %}
+
   {% endfor %}
 
   {% include footer.html %}

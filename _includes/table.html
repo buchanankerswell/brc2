@@ -1,0 +1,24 @@
+<section>
+  <h2 class="major"> {{ page.table.caption }} </h2>
+  <div class="table-wrapper">
+    <table>
+      <thead>
+        <tr>
+          {% for i in page.table.head %}
+          <th> {{ i.cell }} </th>
+          {% endfor %}
+        </tr>
+      </thead>
+      <tbody>
+        {% for i in page.table.body %}
+        <tr>
+          {% for j in i.col %}
+          <td> {{ j.cell }} </td>
+          {% endfor %}
+        </tr>
+        {% endfor %}
+        <tr>
+      </tbody>
+    </table>
+  </div>
+</section>
