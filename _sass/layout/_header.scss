@@ -22,6 +22,10 @@
 		max-width: 100%;
 		text-align: center;
 
+		.icon-hp {
+			font-size: 0.85em;
+		}
+
 		> * {
 			@include vendor('transition', 'opacity #{_duration(article)} ease-in-out');
 			position: relative;
@@ -36,6 +40,7 @@
 				width: _size(border-width);
 				height: calc(3.5rem + 1px);
 				background: _palette(border);
+				max-width: 100%;
 			}
 		}
 
@@ -47,16 +52,57 @@
 			}
 		}
 
+		@include breakpoint('<=small') {
+			.logo {
+				width: 10rem;
+				height: 10rem;
+				line-height: 10rem;
+				border: solid _size(border-width) _palette(border);
+				border-radius: 100%;
+				font-size: 3em;
+				font-weight: bolder;
+				text-align: center;
+
+				.icon {
+					&:before {
+						font-size: 8rem;
+					}
+				}
+			}
+		}
+
+		@include breakpoint('<=xsmall') {
+			.logo {
+				width: 10rem;
+				height: 10rem;
+				line-height: 10rem;
+				border: solid _size(border-width) _palette(border);
+				border-radius: 100%;
+				font-size: 3em;
+				font-weight: bolder;
+				text-align: center;
+
+				.icon {
+					&:before {
+						font-size: 8rem;
+					}
+				}
+			}
+		}
+
 		.logo {
-			width: 5.5rem;
-			height: 5.5rem;
-			line-height: 5.5rem;
+			width: 10rem;
+			height: 10rem;
+			line-height: 10rem;
 			border: solid _size(border-width) _palette(border);
 			border-radius: 100%;
+			font-size: 6em;
+			font-weight: bolder;
+			text-align: center;
 
 			.icon {
 				&:before {
-					font-size: 2rem;
+					font-size: 8rem;
 				}
 			}
 		}
@@ -78,6 +124,11 @@
 				padding: 3rem 2rem;
 				max-height: 40rem;
 				overflow: hidden;
+				max-width: 100%;
+
+				> h1 {
+					font-size: 2.5rem;
+				}
 
 				> :last-child {
 					margin-bottom: 0;
@@ -111,13 +162,13 @@
 
 					a {
 						display: block;
-						min-width: 7.5rem;
+						min-width: 10rem;
 						height: 2.75rem;
 						line-height: 2.75rem;
-						padding: 0 1.25rem 0 (1.25rem + _font(letter-spacing));
+						padding: 0 2rem 0 (2rem + _font(letter-spacing));
 						text-transform: uppercase;
 						letter-spacing: _font(letter-spacing);
-						font-size: 0.8rem;
+						font-size: 0.85rem;
 						border-bottom: 0;
 
 						&:hover {

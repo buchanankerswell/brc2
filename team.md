@@ -1,80 +1,32 @@
 ---
 title: team
-image: team.jpg
+image:
 ---
-<p> Some nice text about our company </p>
+<section>
+
+  <h3 class="major"> Travis Cottam [Founder & CEO] </h3>
+
+  <span><img class="profileimg" src="assets/images/fulls/IMG_5685.jpg" alt="" /></span>
+
+  <blockquote>I am proud to stand by our team and our work. We love a challenge. I am happy to talk about your next project.</blockquote>
+
+  <h3 class="major"> Gavin & Ranse [Operators] </h3>
+
+  <span><img class="profileimg" src="assets/images/fulls/IMG_3028.jpg" alt="" /></span>
+
+  <blockquote>We are students and entrepreneurs. We focus on building quality relationships with our clients and getting the job done right.</blockquote>
+
+</section>
 
 <section>
-  <h3 class="major"> Travis Cottam "El Hefe" </h3>
-  <span class="image main"><img src="assets/images/trav.jpg" alt="" /></span>
-  <blockquote>I love moving dirt! Here is a wholesome quote about my team and our work ethic.</blockquote>
-  <h3 class="major"> Ranse Cottam "Youngblood" </h3>
-  <span class="image main"><img src="assets/images/ranse.jpg" alt="" /></span>
-  <blockquote>I also love digging dirt! Especially when I'm getting paid!</blockquote>
-  <h5><a href="#work">Check out our jobs</a></h5>
-</section>
+
+<h2>Support</h2>
 <hr>
-<section>
-  <h2 class> The Equipment </h2>
-  </br>
-  <ul>
-    <li>Big CAT</li>
-    <li>Little CAT</li>
-    <li>Aother CAT</li>
-    <li>MiniX</li>
-    <li>Harley Road King</li>
-    <li>Aother CAT</li>
-  </ul>
-</section>
 
-<section>
-	<h3 class="major">Estimates</h3>
-	<h5><a href="#contact">Contact us for a detailed quote</a></h5>
-	<div class="table-wrapper">
-		<table>
-			<thead>
-				<tr>
-					<th>Name</th>
-					<th>Description</th>
-					<th>Price</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>Item One</td>
-					<td>Ante turpis integer aliquet porttitor.</td>
-					<td>29.99</td>
-				</tr>
-				<tr>
-					<td>Item Two</td>
-					<td>Vis ac commodo adipiscing arcu aliquet.</td>
-					<td>19.99</td>
-				</tr>
-				<tr>
-					<td>Item Three</td>
-					<td> Morbi faucibus arcu accumsan lorem.</td>
-					<td>29.99</td>
-				</tr>
-				<tr>
-					<td>Item Four</td>
-					<td>Vitae integer tempus condimentum.</td>
-					<td>19.99</td>
-				</tr>
-				<tr>
-					<td>Item Five</td>
-					<td>Ante turpis integer aliquet porttitor.</td>
-					<td>29.99</td>
-				</tr>
-			</tbody>
-			<tfoot>
-				<tr>
-					<td colspan="2"></td>
-					<td>100.00</td>
-				</tr>
-			</tfoot>
-		</table>
-	</div>
-</section>
+  <h3 class="major"> Laney [Contractor] </h3>
 
-<!-- Footlinks -->
-<p class="copyright" style="text-align:center;"><a href="#">Home</a> | <a href="#contact">Contact</a> | <a href="#mission">Mission</a> | <a href="#team">Team</a> | <a href="#work">Work</a></p>
+  <span><img class="profileimgportrait" src="assets/images/fulls/IMG_2784.jpg" alt="" /></span>
+
+  <blockquote>Hi, I'm Laney. I help our family business when I am not studying.</blockquote>
+
+</section>

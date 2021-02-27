@@ -2,7 +2,7 @@
 title: Black Ridge Contractors
 email: traviscottam@gmail.com
 description: Southern Utah's Greatest Excavators
-baseurl: '' # the subpath of your site, e.g. /blog
+baseurl: '/brc2' # the subpath of your site, e.g. /blog
 url: '' # the base hostname & protocol for your site
 author:
 street_address: 1234 Somewhere Road
@@ -15,18 +15,20 @@ phone: (801) 318-7903
 icon: fa-connectdevelop # Font Awesome class for your site's icon
 
 # Social settings
-facebook_url: a
-github_url: b
-gitlab_url: c
-googleplus_url: d
-instagram_url: e
-linkedin_url: f
-pinterest_url: g
-slack_url: h
-twitter_url: i
+facebook_url: https://buchanankerswell.com/brc
+github_url: https://buchanankerswell.com/brc
+gitlab_url: https://buchanankerswell.com/brc
+googleplus_url: https://buchanankerswell.com/brc
+instagram_url: https://buchanankerswell.com/brc
+linkedin_url: https://buchanankerswell.com/brc
+pinterest_url: https://buchanankerswell.com/brc
+slack_url: https://buchanankerswell.com/brc
+twitter_url: https://buchanankerswell.com/brc
 
 # Build settings
 markdown: kramdown
-
 sass:
-style: compressed
+  style: compressed
+collections:
+  images:
+    output: true
