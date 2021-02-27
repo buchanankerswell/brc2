@@ -16,7 +16,7 @@
 			@include vendor('pointer-events', 'none');
 			background-image: url('../../assets/images/overlay.png');
 			background-color: _palette(bg-overlay);
-			border-radius: _size(border-radius);
+			border-radius: _size(radius);
 			content: '';
 			display: block;
 			height: 100%;
@@ -68,9 +68,7 @@
 			margin: (_size(element-margin) * 1) 0;
 			width: 100%;
 			max-width: 100%;
-			border-radius: 50px;
-			//-webkit-mask-image: linear-gradient(to top, transparent 1%, black);
-			//mask-image: linear-gradient(to top, transparent 1%, black);
+			border-radius: _size(border-radius);
 
 			img {
 				width: 100%;

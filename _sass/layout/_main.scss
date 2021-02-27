@@ -31,7 +31,7 @@
 		margin-right: auto;
 		max-width: 100%;
 		width: 95%;
-		border-radius: 50px;
+		border-radius: _size(border-radius);
 	}
 
 	.profileimgportrait {
@@ -39,8 +39,8 @@
 		margin-left: auto;
 		margin-right: auto;
 		max-width: 100%;
-		width: 45%;
-		border-radius: 50px;
+		width: 60%;
+		border-radius: _size(border-radius);
 	}
 
 	article {
@@ -54,7 +54,7 @@
 		border-radius: _size(border-radius);
 		opacity: 0;
 
-		&#jobs {
+		&#gallery {
 			width: 83%;
 			max-width: 100%;
 		}
@@ -115,6 +115,11 @@
 			border-radius: _size(border-radius);
 			opacity: 0;
 
+			&#gallery {
+				width: 100%;
+				max-width: 100%;
+			}
+
 			.close {
 				&:before {
 					top: 0.875rem;
@@ -135,9 +140,14 @@
 			background-color: transparentize(_palette(bg), 0.5);
 			border-radius: _size(border-radius);
 			opacity: 0;
+
+			&#gallery {
+				width: 83%;
+				max-width: 100%;
+			}
 		}
 	}
-	// Jobs page [poptrox]
+	// gallery page [poptrox]
 	@include vendor('transition', ('-moz-filter #{_duration(panel)} ease', '-webkit-filter #{_duration(panel)} ease', '-ms-filter #{_duration(panel)} ease', 'filter #{_duration(panel)} ease'));
 	@include vendor('display', 'flex');
 	@include vendor('flex-wrap', 'wrap');
@@ -148,7 +158,7 @@
 	-ms-user-select: none;
 	user-select: none;
 
-	.jobs {
+	.gallery {
 		@include vendor('transition', ('opacity 1.25s ease-in-out'));
 		@include vendor('pointer-events', 'auto');
 		-webkit-tap-highlight-color: rgba(255,255,255,0);
@@ -239,16 +249,39 @@
 	}
 
 	body.is-preload & {
-		.jobs {
+		.gallery {
 			@include vendor('pointer-events', 'none');
 			opacity: 0;
 		}
 	}
-	@mixin jobs($rows, $columns, $pad, $minHeight) {
+	@mixin gallery($rows, $columns, $pad, $minHeight) {
 		$baseDelay: _duration(header) - 0.5;
-		$defaultDelay: $baseDelay + (((($rows * $columns) + 1) * 1.5) * _duration(jobs));
+		$defaultDelay: $baseDelay + (((($rows * $columns) + 1) * 1.5) * _duration(gallery));
 
-		.jobs {
+		@include breakpoint('<=xsmall') {
+			.gallery {
+				@include vendor('transition-delay', '#{$defaultDelay}');
+				/*height: calc(#{40vh / ($rows + $pad)} - #{_size(header) / $rows});*/
+				height: ((90vw / $columns) + 2vw);
+				min-height: $minHeight;
+				width: 90%;
+				max-width: 100%;
+				// Prevent user touch selection
+				-webkit-touch-callout: none;
+				-webkit-user-select: none;
+				-khtml-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+				@for $i from 1 through (($rows * $columns)) {
+					&:nth-child(#{$i}) {
+						@include vendor('transition-delay', '#{$baseDelay + ($i * _duration(gallery))}');
+					}
+				}
+			}
+		}
+
+		.gallery {
 			@include vendor('transition-delay', '#{$defaultDelay}');
 			/*height: calc(#{40vh / ($rows + $pad)} - #{_size(header) / $rows});*/
 			height: ((100vw / $columns) + 2vw);
@@ -264,27 +297,27 @@
 			user-select: none;
 			@for $i from 1 through (($rows * $columns)) {
 				&:nth-child(#{$i}) {
-					@include vendor('transition-delay', '#{$baseDelay + ($i * _duration(jobs))}');
+					@include vendor('transition-delay', '#{$baseDelay + ($i * _duration(gallery))}');
 				}
 			}
 		}
 	}
 	// Default.
-	@include jobs(_misc(main-layout, default, rows), _misc(main-layout, default, columns), _misc(main-layout, default, pad), _misc(main-layout, default, minHeight));
+	@include gallery(_misc(main-layout, default, rows), _misc(main-layout, default, columns), _misc(main-layout, default, pad), _misc(main-layout, default, minHeight));
 	// XLarge.
 	@include breakpoint('<=xlarge') {
-		@include jobs(_misc(main-layout, xlarge, rows), _misc(main-layout, xlarge, columns), _misc(main-layout, xlarge, pad), _misc(main-layout, xlarge, minHeight));
+		@include gallery(_misc(main-layout, xlarge, rows), _misc(main-layout, xlarge, columns), _misc(main-layout, xlarge, pad), _misc(main-layout, xlarge, minHeight));
 	}
 	// Large.
 	@include breakpoint('<=large') {
-		@include jobs(_misc(main-layout, large, rows), _misc(main-layout, large, columns), _misc(main-layout, large, pad), _misc(main-layout, large, minHeight));
+		@include gallery(_misc(main-layout, large, rows), _misc(main-layout, large, columns), _misc(main-layout, large, pad), _misc(main-layout, large, minHeight));
 	}
 	// Medium.
 	@include breakpoint('<=medium') {
-		@include jobs(_misc(main-layout, medium, rows), _misc(main-layout, medium, columns), _misc(main-layout, medium, pad), _misc(main-layout, medium, minHeight));
+		@include gallery(_misc(main-layout, medium, rows), _misc(main-layout, medium, columns), _misc(main-layout, medium, pad), _misc(main-layout, medium, minHeight));
 	}
 	// XSmall.
 	@include breakpoint('<=xsmall') {
-		@include jobs(_misc(main-layout, xsmall, rows), _misc(main-layout, xsmall, columns), _misc(main-layout, xsmall, pad), _misc(main-layout, xsmall, minHeight));
+		@include gallery(_misc(main-layout, xsmall, rows), _misc(main-layout, xsmall, columns), _misc(main-layout, xsmall, pad), _misc(main-layout, xsmall, minHeight));
 	}
 }

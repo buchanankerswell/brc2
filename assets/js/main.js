@@ -25,13 +25,13 @@
       $main = $('#main'),
       $main_articles = $main.children('article');
 
-    // Poptrox gallery
+    // Poptrox
     $(document).ready(function() {
-      $('#gallery').poptrox();
+      $('#poptrox').poptrox();
     });
 
     // Poptrox options
-    $('#gallery').poptrox({
+    $('#poptrox').poptrox({
       preload: false, // If true, preload fullsize images in
       // the background
       baseZIndex: 1000, // Base Z-Index
