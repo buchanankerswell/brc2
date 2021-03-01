@@ -89,6 +89,11 @@
       onPopupOpen: null // Called when popup opens
     });
 
+    // poptrox margin hack on xsmall devices
+    breakpoints.on('<=xsmall', function() {
+      $main[0]._poptrox.windowMargin = 0;
+    });
+
     // Disable animations/transitions until the page has loaded.
     $body.addClass('is-loading');
 
